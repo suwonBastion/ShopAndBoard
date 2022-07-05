@@ -42,7 +42,7 @@ public class DogFrontController extends HttpServlet{
 		Action action = null;
 		ActionForward forward = null;
 		
-		// 2. 각 요청별로 비즈니스 로직 호출
+		// 2. 각 요청별로 비즈니스 로직 호출.
 		if(command.equals("/dogList.dog")) {
 			action = new DogListAction();
 			// 프로젝트명 + 기능 + 형태(?)
