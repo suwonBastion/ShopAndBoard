@@ -4,6 +4,10 @@ public class ActionForward {
 	private String path;
 	private boolean redirect;
 	
+	public ActionForward(String string, boolean b) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getPath() {
 		return path;
 	}
