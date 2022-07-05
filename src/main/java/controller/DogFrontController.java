@@ -30,7 +30,9 @@ public class DogFrontController extends HttpServlet{
 	HttpServletResponse response)
 	throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		// 1. 요청파악
+		// 1. 요청파악!
+		
+		
 		String requestURI = request.getRequestURI();
 		// 요청 URL: http://localhost:8088/boardProject/boardWriteForm.bo
 		// requestURI: /boardProject/boardWriteForm.bo 반환
