@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import static db.JdbcUtil.*;
 
 import vo.Dog;
 
@@ -95,15 +96,15 @@ public class DogDAO {
 			pstmt.setInt(2, dog.getPrice());
 			pstmt.setString(3, dog.getImage());
 			pstmt.setString(4, dog.getCountry());
-			pstmt.setInt(5, dog.Height);
-			pstmt.setInt(6, getWeight);
+			pstmt.setInt(5, dog.getHeight());
+			pstmt.setInt(6, dog.getWeight());
 			pstmt.setString(7,dog.getContent());
 			pstmt.setInt(8, dog.getReadcount());
 			insertCount = pstmt.executeUpdate();
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}finally {
-			close(pstmt)
+			close(pstmt);
 		}
 		return insertCount;
 	}
