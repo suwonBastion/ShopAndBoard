@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import action.Action;
+import vo.ActionForward;
+
 @WebServlet(".*dog")
 public class DogFrontController extends HttpServlet{
 	
@@ -28,10 +31,11 @@ public class DogFrontController extends HttpServlet{
 	throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		// 1. 요청파악
-		String requestURI - request.getRequestURI();
-		// 요청 URL: http://localhost:8088/boardProject/boardWriteFrom.bo 반환
+		String requestURI = request.getRequestURI();
+		// 요청 URL: http://localhost:8088/boardProject/boardWriteForm.bo
+		// requestURI: /boardProject/boardWriteForm.bo 반환
 		
-		String contectPath = request.getContextPath();
+		String contextPath = request.getContextPath();
 		// /boardProject 반환
 		
 		String command = requestURI.substring(contextPath.length());
