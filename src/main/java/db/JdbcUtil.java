@@ -13,9 +13,8 @@ public class JdbcUtil {
 		Connection con = null;
 		
 		try {
-			Context initCtx=new InitialContext();
-			Context envCtx=(Context)initCtx.lookup("java:comp/env");
-			DataSource ds=(DataSource)envCtx.lookup("jdbc/dogTest");
+			Context context=new InitialContext();
+			DataSource ds=(DataSource)context.lookup("java:comp/env/jdbc/OracleDB");
 			con=ds.getConnection();
 			con.setAutoCommit(false);
 		} catch (Exception e) {

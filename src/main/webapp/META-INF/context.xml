@@ -6,7 +6,7 @@
    type="javax.sql.DataSource"
    factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
    driverClassName="oracle.jdbc.driver.OracleDriver"
-   url="jdbc:oracle:thin:@192.168.0.19:1521:xe"
+   url="jdbc:oracle:thin:@192.168.0.19:1521:XE"
    
    username="c##java"
    password="java"
