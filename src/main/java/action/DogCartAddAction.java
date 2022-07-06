@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import svc.DogCartAddService;
 import vo.ActionForward;
+import vo.Dog;
 
 public class DogCartAddAction implements Action {
 
