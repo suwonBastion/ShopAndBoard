@@ -51,13 +51,13 @@
 			<tr>
 				<c:forEach var = "dog" items="${dogList }" varStatus="status">				
 					<td>
-					<a href="dogView.dog?id=${dog/id }">
-						<img src="images/${dog.image }" id="productImage"/>
+					<a href="dogView.dog?id=${dog.id }">
+						<img src="images/${dog.image }" id="productImage">
 					</a>
 					상품명:${dog.kind }<br>
 					가격:${dog.price }<br>
 					</td>
-					<c:if test="${((status.index+1) mod 4))==0 }">
+					<c:if test="${((status.index+1) mod 4)==0 }">
 						</tr>
 						<tr>						
 					</c:if>
