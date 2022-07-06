@@ -15,8 +15,7 @@ public class DogCartSearchAction implements Action {
 	public ActionForward execute(HttpServletRequest request,
 	HttpServletResponse response) throws Exception {
 		// TODO Auto-generated method stub
-		DogCartSearchService dogCartSearchService = new
-		DogCartSearchService();
+		DogCartSearchService dogCartSearchService = new	DogCartSearchService();
 		int startMoney = Integer.parseInt(request.
 		getParameter("startMoney"));
 		int endMoney = Integer.parseInt(request.
