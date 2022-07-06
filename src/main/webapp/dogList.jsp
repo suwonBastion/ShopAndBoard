@@ -52,12 +52,16 @@
 				<c:forEach var = "dog" items="${dogList }" varStatus="status">				
 					<td>
 					<a href="dogView.dog?id=${dog.id }">
+<<<<<<< HEAD
 						<img src="images/${dog.image }" id="productImage"/>
+=======
+						<img src="images/${dog.image }" id="productImage">
+>>>>>>> a926519f5616f0248b51e5c7edb22c739e97da89
 					</a>
 					상품명:${dog.kind }<br>
 					가격:${dog.price }<br>
 					</td>
-					<c:if test="${((status.index+1) mod 4))==0 }">
+					<c:if test="${((status.index+1) mod 4)==0 }">
 						</tr>
 						<tr>						
 					</c:if>
