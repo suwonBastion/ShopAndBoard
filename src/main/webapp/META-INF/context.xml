@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <context>
    <Resource 
-   name="jdbc/OracleDB"
+   name="jdbc/dogTest"
    auth="Container"
    type="javax.sql.DataSource"
    factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
