@@ -61,7 +61,7 @@ nav{
 <nav >
   네비
   <ul>
-    <li><a href="#">상품목록</a></li>
+    <li><a href="/ShopAndBoard/dogList.dog">상품목록</a></li>
     <li><a href="#">장바구니</a></li>
     <li><a href="#">상품등록</a></li>
 
@@ -79,7 +79,7 @@ nav{
 </article>
 <article id="list">
 
-리스트
+<a href="/ShopAndBoard/dogList.dog">리스트</a> 
 
 </article>
 

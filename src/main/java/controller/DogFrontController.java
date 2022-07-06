@@ -22,7 +22,7 @@ import action.DogRegistFormAction;
 import action.DogViewAction;
 import vo.ActionForward;
 
-@WebServlet(".*dog")
+@WebServlet("*.dog")
 public class DogFrontController extends HttpServlet{
 	
 	protected void doGet (HttpServletRequest request,
@@ -53,7 +53,7 @@ public class DogFrontController extends HttpServlet{
 		String command = requestURI.substring(contextPath.length());
 		Action action = null;
 		ActionForward forward = null;
-		
+		System.out.println(command);
 		// 2. 각 요청별로 비즈니스 로직 호출
 		if(command.equals("/dogList.dog")) {
 			action = new DogListAction();
