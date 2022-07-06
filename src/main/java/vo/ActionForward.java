@@ -5,7 +5,8 @@ public class ActionForward {
 	private boolean redirect;
 	
 	public ActionForward(String string, boolean b) {
-		// TODO Auto-generated constructor stub
+		this.path = string;
+		this.redirect = b;
 	}
 
 	public String getPath() {
