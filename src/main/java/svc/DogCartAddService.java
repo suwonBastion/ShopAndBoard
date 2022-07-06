@@ -2,10 +2,9 @@ package svc;
 
 import java.sql.Connection;
 import java.util.ArrayList;
-
+import static db.JdbcUtil.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-
 import dao.DogDAO;
 import vo.Cart;
 import vo.Dog;
