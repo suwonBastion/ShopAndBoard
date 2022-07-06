@@ -16,7 +16,7 @@ public class DogCartAddAction implements Action {
 		int id =Integer.parseInt(request.getParameter("id"));
 		
 		Dog cartDog =dogCartAddService.getCartDog(id);
-		dogCartAddService.assCart(request,cartDog);
+		dogCartAddService.addCart(request,cartDog);
 		ActionForward forward= new ActionForward("dogCartList.dog",true);
 		return forward;
 	}
