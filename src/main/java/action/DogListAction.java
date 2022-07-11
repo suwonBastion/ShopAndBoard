@@ -25,7 +25,7 @@ public class DogListAction implements Action{
 		}
 		DogListService dogListService = new DogListService();
 		ArrayList<Dog> dogList = dogListService.getDogList();
-		request.setAttribute("DogList", dogList);
+		request.setAttribute("dogList", dogList);
 		request.setAttribute("todayImageList",todayImageList);
 		ActionForward forward = new ActionForward("dogList.jsp",false);
 		return forward;

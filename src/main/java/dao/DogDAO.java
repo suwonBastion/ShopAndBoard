@@ -27,7 +27,7 @@ public class DogDAO {
 		ResultSet rs = null;
 		ArrayList<Dog> dogList = null;
 		try {
-			pstmt = con.prepareStatement("SELECT * FROM dog");
+			pstmt = con.prepareStatement("SELECT * FROM DOG");
 			rs = pstmt.executeQuery();
 			
 			if(rs.next()) {
@@ -51,7 +51,7 @@ public class DogDAO {
 		Dog dog = null;
 		
 		try {
-			pstmt = con.prepareStatement("SELECT * FROM dog WHERE id=?");
+			pstmt = con.prepareStatement("SELECT * FROM DOG WHERE id=?");
 			pstmt.setInt(1, id);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {

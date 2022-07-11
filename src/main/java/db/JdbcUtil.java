@@ -13,9 +13,14 @@ public class JdbcUtil {
 		Connection con = null;
 		
 		try {
+<<<<<<< HEAD
 			Context initCtx=new InitialContext();
 			Context envCtx=(Context)initCtx.lookup("java:comp/env");
 			DataSource ds=(DataSource)envCtx.lookup("jdbc/JSP_java");
+=======
+			Context context=new InitialContext();
+			DataSource ds=(DataSource)context.lookup("java:comp/env/jdbc/OracleDB");
+>>>>>>> 047a5ac393a439e1b08351ae46e4e830b4d0b5f8
 			con=ds.getConnection();
 			con.setAutoCommit(false);
 		} catch (Exception e) {

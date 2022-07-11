@@ -22,6 +22,7 @@ import action.DogRegistFormAction;
 import action.DogViewAction;
 import vo.ActionForward;
 
+
 @WebServlet("*.dog")
 public class DogFrontController extends HttpServlet{
 	
@@ -62,6 +63,7 @@ public class DogFrontController extends HttpServlet{
 				forward = action.execute(request, response);
 			} catch(Exception e) {
 				e.printStackTrace();
+				System.out.println("½ÇÆÐ");
 			}
 		}
 		else if (command.equals("/dogView.dog")) {
